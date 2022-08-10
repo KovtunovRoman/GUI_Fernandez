@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_gui.Controller">
+  <children>
+    <MenuBar prefHeight="10.0" prefWidth="655.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="494.0" prefWidth="721.0" VBox.vgrow="ALWAYS">
+      <children>
+            <AnchorPane layoutY="-1.0" prefHeight="63.0" prefWidth="717.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.3778626024723053" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Text layoutX="166.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sport's Orientation" wrappingWidth="184.0869140625">
+                     <font>
+                        <Font name="Times New Roman Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="65.0" fitWidth="154.0" layoutX="597.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcgg2Dk1Z-jZ2PC3C1BVpKiZqjf4-C9mjd5g&amp;usqp=CAU" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="-1.0" prefHeight="494.0" prefWidth="154.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="0.0" radius="4.75">
+                     <color>
+                        <Color opacity="0.37404578924179077" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Text layoutX="14.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Меню операций" wrappingWidth="97.654296875">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" layoutX="3.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="148.0" />
+                  <Button fx:id="connectTheDevice" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Подключить устр-во" />
+                  <Button fx:id="clearingMemory" layoutX="10.0" layoutY="139.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Очистка памяти" />
+                  <Button fx:id="updatePO" layoutX="10.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Обновить ПО" />
+                  <Button fx:id="readingInformation" layoutX="10.0" layoutY="107.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Чтение информации" />
+                  <Button fx:id="resetSettings" layoutX="10.0" layoutY="209.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Сброс настроек" />
+                  <RadioButton fx:id="duplicateInformationEEPROM" layoutX="15.0" layoutY="242.0" mnemonicParsing="false" text="Дублировать&#10;информацию&#10;в EEPROM" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="155.0" layoutY="365.0" prefHeight="129.0" prefWidth="561.0" />
+            <Label layoutX="588.0" layoutY="292.0" prefHeight="73.0" prefWidth="128.0" />
+            <MenuButton fx:id="portSelection" layoutX="177.0" layoutY="77.0" mnemonicParsing="false" text="MenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <Button fx:id="сhoosePath" layoutX="177.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Выбрать путь" />
+            <Button fx:id="loadConfig" layoutX="315.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0" text="Загрузить конфигурацию" />
+            <Button fx:id="readingFile" layoutX="518.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Чтение" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
